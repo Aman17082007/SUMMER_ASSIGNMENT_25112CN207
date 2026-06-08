@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 
 int main() {
@@ -26,3 +27,29 @@ int main() {
 }
 
 
+=======
+// program to find nth fibonacci term
+#include <stdio.h>
+
+int main()
+{
+    int n, a = 0, b = 1, c;
+
+    printf("enter the value of n :");
+    scanf("%d", &n);
+
+    for (int i = 2; i <= n; i++)
+    {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    if (n == 0)
+        printf("%d", a);
+    else
+        printf("%d", b);
+
+    return 0;
+}
+>>>>>>> adf6740 (DAY-6 uploaded.)
